@@ -14,7 +14,7 @@ const port = 4000;
 const allowedOrigins = new Set(
   (
     process.env.ALLOWED_ORIGINS ||
-    "http://localhost:5173,http://localhost:5174,http://localhost:5175"
+    "https://medicare-frontend-ryh1.onrender.com,https://medicare-admin-f393.onrender.com"
   )
     .split(",")
     .map((v) => v.trim())
