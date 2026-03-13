@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { listPageStyles } from "../assets/dummyStyles.js";
 import { useParams } from "react-router-dom";
 import { Calendar, Phone, Search, X } from "lucide-react";
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://medicare-backend-bc4d.onrender.com";
 function parseDateTime(date, time) {
   return new Date(`${date}T${time}:00`);
 }

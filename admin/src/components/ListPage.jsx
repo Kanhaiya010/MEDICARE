@@ -78,7 +78,7 @@ function _getSortedScheduleDates(scheduleLike) {
 }
 
 const ListPage = () => {
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "https://medicare-backend-bc4d.onrender.com";
   const [_doctors, _setDoctors] = useState([]);
   const [_expanded, _setExpanded] = useState(null);
   const [_query, _setQuery] = useState("");

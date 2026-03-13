@@ -12,11 +12,11 @@ import {
 } from "lucide-react";
 import { doctorDetailStyles as s } from "../assets/dummyStyles";
 
-const API_BASE = (import.meta.env.VITE_API_BASE || "http://localhost:4000")
+const API_BASE = (import.meta.env.VITE_API_BASE || "https://medicare-backend-bc4d.onrender.com")
   .trim()
   .replace(/\/$/, "");
 const API_BASE_CANDIDATES = Array.from(
-  new Set([API_BASE, "http://localhost:4000"]),
+  new Set([API_BASE, "https://medicare-backend-bc4d.onrender.com"]),
 ).filter((base) => /^https?:\/\//.test(base));
 
 async function postDoctorWithFallback(formData) {
@@ -39,7 +39,7 @@ async function postDoctorWithFallback(formData) {
   }
   if (!hadAnyHttpResponse) {
     throw new Error(
-      "Cannot connect to backend at http://localhost:4000. Start backend server.",
+      "Cannot connect to backend at https://medicare-backend-bc4d.onrender.com. Start backend server.",
     );
   }
   throw lastError || new Error("Failed to add doctor");

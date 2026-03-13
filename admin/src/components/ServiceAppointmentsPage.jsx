@@ -13,7 +13,7 @@ import {
   Clock,
 } from "lucide-react";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://medicare-backend-bc4d.onrender.com";
 
 function formatTwo(n) {
   return String(n).padStart(2, "0");

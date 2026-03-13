@@ -13,7 +13,7 @@ import {
 
 const AddService = ({ serviceId }) => {
   const TOAST_DURATION_MS = 3500;
-  const API_BASE = "http://localhost:4000"
+  const API_BASE = "https://medicare-backend-bc4d.onrender.com"
   const fileRef = useRef(null);
   const toastHideTimerRef = useRef(null);
   const toastRemoveTimerRef = useRef(null);

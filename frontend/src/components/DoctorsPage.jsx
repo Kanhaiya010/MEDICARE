@@ -4,7 +4,7 @@ import { ChevronRight, Medal, MousePointer2Off, Search, X } from "lucide-react";
 import { doctorsPageStyles } from "../assets/dummyStyles.js";
 
 const DoctorsPage = () => {
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "https://medicare-backend-bc4d.onrender.com";
 
   const [allDoctors, setAllDoctors] = useState([]);
   const [loading, setLoading] = useState(true);

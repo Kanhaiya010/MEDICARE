@@ -6,7 +6,7 @@ import {
 } from "../assets/dummyStyles.js";
 import { BadgeIndianRupee, Calendar, Search } from "lucide-react";
 
-const API_BASE = "http://localhost:4000"
+const API_BASE = "https://medicare-backend-bc4d.onrender.com"
 
 
 function _formatDateISO(iso) {

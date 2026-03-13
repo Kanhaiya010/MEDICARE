@@ -24,7 +24,7 @@ const API_PATHS = {
 const API_BASE_CANDIDATES = [
   API_BASE,
   "",
- "http://localhost:4000",
+ "https://medicare-backend-bc4d.onrender.com",
 ].filter((v, i, arr) => Boolean(v) || i === 1 || arr.indexOf(v) === i);
 
 const buildApiUrl = (base, path) => `${base}${path}`;

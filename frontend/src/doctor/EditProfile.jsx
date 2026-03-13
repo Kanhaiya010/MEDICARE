@@ -57,7 +57,7 @@ function dedupeAndSortSchedule(schedule = {}) {
 export default function EditProfilePage({ apiBase }) {
   const { id } = useParams();
   const navigate = useNavigate();
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "https://medicare-backend-bc4d.onrender.com";
   const API = apiBase || API_BASE;
 
   const [doc, setDoc] = useState(null);
